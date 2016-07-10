@@ -11,24 +11,34 @@ import LocalAuthentication
 
 class AuthViewController: UIViewController {
 
+    @IBOutlet var touchIdButton: UIButton!
+    
+    // MARK: - View Controller Life Circle
+    
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        configureUI()
+    }
+    
+    private func configureUI()
+    {
+        touchIdButton.hidden = !TouchIdHelper.canUseTouchId(nil)
+    }
+    
     // MARK: - Action
     
     @IBAction func authWithTouchId()
     {
-        var error: NSError? = nil
-        if TouchIdHelper.canUseTouchId(&error) {
-            TouchIdHelper.presentTouchIdAlert("Auth via Touch Id",
-                                              fallbackTitle: "Manual input password",
-                                              reply: { [weak self] (result, error) in
-                if result == true {
-                    self?.finishAuth()
-                } else {
-                    self?.proccessError(error)
-                }
+        TouchIdHelper.presentTouchIdAlert("Auth via Touch Id",
+                                          fallbackTitle: "Manual input password",
+                                          reply: { [weak self] (result, error) in
+                                            if result == true {
+                                                self?.finishAuth()
+                                            } else {
+                                                self?.processError(error)
+                                            }
             })
-        } else {
-            proccessError(error)
-        }
     }
     
     // MARK: - Private
@@ -38,7 +48,7 @@ class AuthViewController: UIViewController {
         performSegueWithIdentifier("MainViewController", sender: self)
     }
     
-    private func proccessError(error: NSError?)
+    private func processError(error: NSError?)
     {
         var message = "Other error"
         

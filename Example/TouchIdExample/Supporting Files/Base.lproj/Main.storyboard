@@ -37,6 +37,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="touchIdButton" destination="EYP-Ix-2vX" id="iDr-5o-vUW"/>
                         <segue destination="2kH-hz-92Q" kind="show" identifier="MainViewController" id="5B1-LS-nS4">
                             <nil key="action"/>
                         </segue>
