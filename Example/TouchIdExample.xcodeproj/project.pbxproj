@@ -7,21 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		89DCD18F1D32D26C00866D7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCD18E1D32D26C00866D7E /* AppDelegate.swift */; };
-		89DCD1911D32D26C00866D7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCD1901D32D26C00866D7E /* ViewController.swift */; };
-		89DCD1941D32D26C00866D7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89DCD1921D32D26C00866D7E /* Main.storyboard */; };
-		89DCD1961D32D26C00866D7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DCD1951D32D26C00866D7E /* Assets.xcassets */; };
-		89DCD1991D32D26C00866D7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89DCD1971D32D26C00866D7E /* LaunchScreen.storyboard */; };
+		89DCD1AD1D32D48E00866D7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCD1A11D32D48E00866D7E /* AppDelegate.swift */; };
+		89DCD1AE1D32D48E00866D7E /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCD1A41D32D48E00866D7E /* AuthViewController.swift */; };
+		89DCD1AF1D32D48E00866D7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DCD1A61D32D48E00866D7E /* Assets.xcassets */; };
+		89DCD1B01D32D48E00866D7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89DCD1A81D32D48E00866D7E /* LaunchScreen.storyboard */; };
+		89DCD1B11D32D48E00866D7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89DCD1AA1D32D48E00866D7E /* Main.storyboard */; };
+		89DCD1B21D32D48E00866D7E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89DCD1AC1D32D48E00866D7E /* Info.plist */; };
+		89DCD1B41D32D5C200866D7E /* TouchIdHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCD1B31D32D5C200866D7E /* TouchIdHelper.swift */; };
+		89DCD1B61D32D7D300866D7E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCD1B51D32D7D300866D7E /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		89DCD18B1D32D26C00866D7E /* TouchIdExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchIdExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		89DCD18E1D32D26C00866D7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		89DCD1901D32D26C00866D7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		89DCD1931D32D26C00866D7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		89DCD1951D32D26C00866D7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		89DCD1981D32D26C00866D7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		89DCD19A1D32D26C00866D7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89DCD1A11D32D48E00866D7E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		89DCD1A41D32D48E00866D7E /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		89DCD1A61D32D48E00866D7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		89DCD1A91D32D48E00866D7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89DCD1AB1D32D48E00866D7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		89DCD1AC1D32D48E00866D7E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89DCD1B31D32D5C200866D7E /* TouchIdHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TouchIdHelper.swift; path = ../../../../Classes/TouchIdHelper.swift; sourceTree = "<group>"; };
+		89DCD1B51D32D7D300866D7E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +59,56 @@
 		89DCD18D1D32D26C00866D7E /* TouchIdExample */ = {
 			isa = PBXGroup;
 			children = (
-				89DCD18E1D32D26C00866D7E /* AppDelegate.swift */,
-				89DCD1901D32D26C00866D7E /* ViewController.swift */,
-				89DCD1921D32D26C00866D7E /* Main.storyboard */,
-				89DCD1951D32D26C00866D7E /* Assets.xcassets */,
-				89DCD1971D32D26C00866D7E /* LaunchScreen.storyboard */,
-				89DCD19A1D32D26C00866D7E /* Info.plist */,
+				89DCD1A01D32D48E00866D7E /* Classes */,
+				89DCD1A51D32D48E00866D7E /* Resources */,
+				89DCD1A71D32D48E00866D7E /* Supporting Files */,
 			);
 			path = TouchIdExample;
+			sourceTree = "<group>";
+		};
+		89DCD1A01D32D48E00866D7E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				89DCD1A11D32D48E00866D7E /* AppDelegate.swift */,
+				89DCD1A21D32D48E00866D7E /* Model */,
+				89DCD1A31D32D48E00866D7E /* Presentation */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		89DCD1A21D32D48E00866D7E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				89DCD1B31D32D5C200866D7E /* TouchIdHelper.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		89DCD1A31D32D48E00866D7E /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				89DCD1AA1D32D48E00866D7E /* Main.storyboard */,
+				89DCD1A41D32D48E00866D7E /* AuthViewController.swift */,
+				89DCD1B51D32D7D300866D7E /* MainViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		89DCD1A51D32D48E00866D7E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				89DCD1A61D32D48E00866D7E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		89DCD1A71D32D48E00866D7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				89DCD1A81D32D48E00866D7E /* LaunchScreen.storyboard */,
+				89DCD1AC1D32D48E00866D7E /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +169,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89DCD1991D32D26C00866D7E /* LaunchScreen.storyboard in Resources */,
-				89DCD1961D32D26C00866D7E /* Assets.xcassets in Resources */,
-				89DCD1941D32D26C00866D7E /* Main.storyboard in Resources */,
+				89DCD1B21D32D48E00866D7E /* Info.plist in Resources */,
+				89DCD1B11D32D48E00866D7E /* Main.storyboard in Resources */,
+				89DCD1AF1D32D48E00866D7E /* Assets.xcassets in Resources */,
+				89DCD1B01D32D48E00866D7E /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,28 +183,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89DCD1911D32D26C00866D7E /* ViewController.swift in Sources */,
-				89DCD18F1D32D26C00866D7E /* AppDelegate.swift in Sources */,
+				89DCD1AE1D32D48E00866D7E /* AuthViewController.swift in Sources */,
+				89DCD1AD1D32D48E00866D7E /* AppDelegate.swift in Sources */,
+				89DCD1B41D32D5C200866D7E /* TouchIdHelper.swift in Sources */,
+				89DCD1B61D32D7D300866D7E /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		89DCD1921D32D26C00866D7E /* Main.storyboard */ = {
+		89DCD1A81D32D48E00866D7E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				89DCD1931D32D26C00866D7E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		89DCD1971D32D26C00866D7E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				89DCD1981D32D26C00866D7E /* Base */,
+				89DCD1A91D32D48E00866D7E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		89DCD1AA1D32D48E00866D7E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89DCD1AB1D32D48E00866D7E /* Base */,
+			);
+			name = Main.storyboard;
+			path = "../../Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -249,7 +300,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TouchIdExample/Info.plist;
+				INFOPLIST_FILE = "TouchIdExample/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.badasscoding.TouchIdExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -260,7 +311,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TouchIdExample/Info.plist;
+				INFOPLIST_FILE = "TouchIdExample/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.badasscoding.TouchIdExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -286,6 +337,7 @@
 				89DCD19F1D32D26C00866D7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -53,19 +53,19 @@ class TouchIdHelper {
     /// @li          LAErrorUserCancel if user has tapped the Cancel button
     /// @li          LAErrorSystemCancel if some system event interrupted the evaluation (e.g. Home button pressed).
 
-    class func presentTouchIdAler(reason: String,
-                                  fallbackTitle: String?,
-                                  reply: (Bool, NSError?) -> Void)
+    class func presentTouchIdAlert(reason: String,
+                                   fallbackTitle: String?,
+                                   reply: (Bool, NSError?) -> Void)
     {
         let context = LAContext()
         context.localizedFallbackTitle = fallbackTitle
         let error: NSErrorPointer = nil
-        if (!TouchIdHelper.appCanUseTouchId(error)) {
-            reply(success: false, error: error.memory)
+        if (!TouchIdHelper.canUseTouchId(error)) {
+            reply(false, error.memory)
         } else {
             context.evaluatePolicy(.DeviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, error in
                 dispatch_async(dispatch_get_main_queue()) {
-                    reply(success: success, error: error)
+                    reply(success, error)
                 }
             }
         }
@@ -92,11 +92,11 @@ class TouchIdHelper {
     /// @li          LAErrorUserCancel if user has tapped the Cancel button
     /// @li          LAErrorSystemCancel if some system event interrupted the evaluation (e.g. Home button pressed).
     
-    class func presentTouchIdAler(reason: String,
-                                  reply: (Bool, NSError?) -> Void)
+    class func presentTouchIdAlert(reason: String,
+                                   reply: (Bool, NSError?) -> Void)
     {
-        TouchIdHelper.presentTouchIdAler(reason,
-                                         fallbackTitle: "",
-                                         reply: reply)
+        TouchIdHelper.presentTouchIdAlert(reason,
+                                          fallbackTitle: "",
+                                          reply: reply)
     }
 }
