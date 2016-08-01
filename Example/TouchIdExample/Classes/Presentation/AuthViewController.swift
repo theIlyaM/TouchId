@@ -30,8 +30,8 @@ class AuthViewController: UIViewController {
     
     @IBAction func authWithTouchId()
     {
-        TouchIdHelper.presentTouchIdAlert("Auth via Touch Id",
-                                          fallbackTitle: "Manual input password",
+        TouchIdHelper.presentTouchIdAlert("Reason text",
+                                          fallbackTitle: "Fallback button title",
                                           reply: { [weak self] (result, error) in
                                             if result == true {
                                                 self?.finishAuth()
